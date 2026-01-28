@@ -1,48 +1,52 @@
-**🧱 Bazel + Java HelloWorld Project**
+# 🧱 Bazel + Java HelloWorld Project
 
-A minimal yet well-structured Java project built with Bazel demonstrating:
+A minimal yet well-structured **Java project built with Bazel** demonstrating:
 
-Bazel Bzlmod (MODULE.bazel)
+- Bazel Bzlmod (`MODULE.bazel`)
+- Java binary targets
+- Modular package structure
+- Reusable utility classes
+- Clean, scalable layout (similar to real industry projects)
 
-Java binary targets
+---
 
-Modular package structure
+## 📦 Project Structure
 
-Reusable utility classes
-
-Clean, scalable layout (similar to real industry projects)
-
-**📦 Project Structure**
 bazelsecond/
 ├── MODULE.bazel
 ├── .gitignore
 ├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── project/
-│                       ├── HelloWorld.java
-│                       ├── BUILD
-│                       └── utils/
-│                           ├── MyUtil.java
-│                           └── BUILD
+│ └── main/
+│ └── java/
+│ └── com/
+│ └── example/
+│ └── project/
+│ ├── HelloWorld.java
+│ ├── BUILD
+│ └── utils/
+│ ├── MyUtil.java
+│ └── BUILD
 
-**🚀 Build & Run**
-**🔨 Build the project**
+
+---
+
+## 🚀 Build & Run
+
+### 🔨 Build the project
 
 From the project root:
 
+```bash
 bazel build //src/main/java/com/example/project:hello_world
 
-**▶️ Run the program**
+▶️ Run the program
 bazel run //src/main/java/com/example/project:hello_world
 
-**✅ Expected Output**
+✅ Expected Output
 Pushkar
 Some String
 
-**🛠️ Requirements**
+🛠️ Requirements
 
 Bazel 7.5+
 
