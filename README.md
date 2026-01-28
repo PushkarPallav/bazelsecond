@@ -1,9 +1,18 @@
-Bazel + Java HelloWorld Project
+**🧱 Bazel + Java HelloWorld Project**
 
-This repository contains a minimal Java project built with Bazel, showcasing modular structure and reusable utilities.
+A minimal yet well-structured Java project built with Bazel demonstrating:
 
-📦 Project Structure
+Bazel Bzlmod (MODULE.bazel)
 
+Java binary targets
+
+Modular package structure
+
+Reusable utility classes
+
+Clean, scalable layout (similar to real industry projects)
+
+**📦 Project Structure**
 bazelsecond/
 ├── MODULE.bazel
 ├── .gitignore
@@ -19,33 +28,24 @@ bazelsecond/
 │                           ├── MyUtil.java
 │                           └── BUILD
 
-🚀 Build & Run
+**🚀 Build & Run**
+**🔨 Build the project**
 
-To build the project:
+From the project root:
 
 bazel build //src/main/java/com/example/project:hello_world
 
-To run the binary:
-
+**▶️ Run the program**
 bazel run //src/main/java/com/example/project:hello_world
 
-Expected output:
-
+**✅ Expected Output**
 Pushkar
 Some String
 
-🧪 Testing (Coming Soon)
-
-JUnit integration planned for utility testing.
-
-🛠️ Requirements
+**🛠️ Requirements**
 
 Bazel 7.5+
 
-Java 17+
+Java JDK 17+
 
-Git (for version control)
-
-📚 About
-
-Built by Pushkar Pallav as part of a hands-on journey into Bazel's module system and scalable Java workflows.
+Git (optional, for version control)
