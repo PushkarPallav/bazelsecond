@@ -1,0 +1,6 @@
+module(
+    name = "bazelsecond",
+    version = "0.1",
+)
+
+bazel_dep(name = "rules_java", version = "7.5.0")  # pick latest stable
